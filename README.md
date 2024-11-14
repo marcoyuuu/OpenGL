@@ -41,6 +41,10 @@ Este repositorio contiene diversos ejemplos de implementaciones de OpenGL, organ
 - **Ejecutable**: `OpenGLTriangleWithLighting.exe`
 - **Descripción**: Esta versión mejora la iluminación de Phong, incorporando múltiples fuentes de luz y cámara controlable para permitir la exploración de la escena. Los usuarios pueden experimentar con diferentes posiciones de luz y observar el impacto en los objetos.
 
+## Presentación
+
+Se incluye una presentación detallada que explica paso a paso la implementación de cada proyecto. Esta presentación guía a los usuarios desde los primeros conceptos de OpenGL clásico hasta la implementación moderna utilizando VAOs, VBOs y shaders. Es un recurso ideal para aquellos que buscan una comprensión profunda y progresiva de cómo se desarrollan aplicaciones gráficas con OpenGL.
+
 ## Requisitos Previos
 
 - **OpenGL**: Asegúrese de que su sistema soporta OpenGL 3.3 o superior.
@@ -81,3 +85,4 @@ Si deseas contribuir a este repositorio, puedes ayudar agregando más ejemplos, 
 ## Licencia
 
 Este proyecto está bajo la licencia MIT - mira el archivo [LICENSE](LICENSE) para más detalles.
+
