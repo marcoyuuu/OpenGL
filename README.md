@@ -41,6 +41,13 @@ Este repositorio contiene diversos ejemplos de implementaciones de OpenGL, organ
 - **Ejecutable**: `OpenGLTriangleWithLighting.exe`
 - **Descripción**: Esta versión mejora la iluminación de Phong, incorporando múltiples fuentes de luz y cámara controlable para permitir la exploración de la escena. Los usuarios pueden experimentar con diferentes posiciones de luz y observar el impacto en los objetos.
 
+### 6. **main6**
+
+- **Archivo Principal**: `main6.cpp`
+- **Shaders**: `phong_fragment_shader.glsl`, `phong_vertex_shader.glsl`
+- **Ejecutable**: `OpenGLTrianglesWithMovCamara.exe`
+- **Descripción**: Esta versión añade una escena 3D interactiva con múltiples triángulos de colores y texturas variadas. También se ha incluido un plano infinito para dar más contexto visual a la escena. La cámara se controla mediante las teclas **WASD** para el movimiento y el ratón para la rotación, ofreciendo una exploración completa de la escena. Se han optimizado los shaders para utilizar los colores de los vértices, mejorando la diversidad y el realismo visual de los triángulos. Además, se ha ajustado la iluminación para mejorar la visualización de los materiales y objetos.
+
 ## Presentación
 
 Se incluye una presentación detallada que explica paso a paso la implementación de cada proyecto. Esta presentación guía a los usuarios desde los primeros conceptos de OpenGL clásico hasta la implementación moderna utilizando VAOs, VBOs y shaders. Es un recurso ideal para aquellos que buscan una comprensión profunda y progresiva de cómo se desarrollan aplicaciones gráficas con OpenGL.
