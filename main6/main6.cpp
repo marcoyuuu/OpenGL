@@ -163,6 +163,9 @@ int main() {
         return -1;
     }
 
+    // Activar MSAA antes de crear la ventana
+    glfwWindowHint(GLFW_SAMPLES, 8); // Habilitar MSAA con 4 muestras
+
     // Crear una ventana de 1920x1080 píxeles
     GLFWwindow* window = glfwCreateWindow(1920, 1080, "Escena con Triángulos Texturizados y Coloreados", NULL, NULL);
     if (!window) {
@@ -180,6 +183,9 @@ int main() {
         std::cerr << "No se pudo inicializar GLEW" << std::endl;
         return -1;
     }
+
+    // Habilitar Multisampling en OpenGL
+    glEnable(GL_MULTISAMPLE); // Activar MSAA
 
     glEnable(GL_DEPTH_TEST); // Habilitar el buffer de profundidad desde el inicio para Phong Shading
 
@@ -317,6 +323,8 @@ int main() {
     // Definir la posición y el color de la luz y de la cámara
     glm::vec3 lightPos(5.0f, 10.0f, 10.0f); // Luz elevada para iluminar desde arriba
     glm::vec3 lightColor(0.9f, 0.9f, 1.0f); // Luz ligeramente azulada
+    glm::vec3 lightDir(-0.2f, -1.0f, -0.3f); // Luz direccional descendente
+    glm::vec3 pointLightPos(2.0f, 1.0f, 1.0f);
 
     // Crear el plano base
     unsigned int groundVAO, groundVBO;
@@ -352,12 +360,18 @@ int main() {
         glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 
-        // Pasar la posición y el color de la luz al fragment shader
+        // Pasar la posición, el color y la dirección de la luz al fragment shader
         int lightPosLoc = glGetUniformLocation(shaderProgram, "lightPos");
         glUniform3fv(lightPosLoc, 1, &lightPos[0]);
 
         int lightColorLoc = glGetUniformLocation(shaderProgram, "lightColor");
         glUniform3fv(lightColorLoc, 1, &lightColor[0]);
+
+        int lightDirLoc = glGetUniformLocation(shaderProgram, "lightDir");
+        glUniform3fv(lightDirLoc, 1, glm::value_ptr(lightDir));
+
+        int pointLightPosLoc = glGetUniformLocation(shaderProgram, "pointLightPos");
+        glUniform3fv(pointLightPosLoc, 1, glm::value_ptr(pointLightPos));
 
         int viewPosLoc = glGetUniformLocation(shaderProgram, "viewPos");
         glUniform3fv(viewPosLoc, 1, &cameraPos[0]);
