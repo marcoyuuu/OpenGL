@@ -1,7 +1,7 @@
 #include <GL/glut.h>  // Incluye la biblioteca GLUT para gestionar ventanas y dibujar gráficos en OpenGL.
 
 // Función de callback que se encarga de renderizar la escena.
-void display() {
+void d() {
     // Limpia el buffer de color para preparar la pantalla para dibujar.
     glClear(GL_COLOR_BUFFER_BIT);
 
@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
     glutCreateWindow("Triangulo Simple");
 
     // Establece la función de display (renderizado), que se llama cada vez que es necesario redibujar.
-    glutDisplayFunc(display);
+    glutDisplayFunc(d);
 
     // Entra en el bucle principal de GLUT. Este bucle gestiona eventos como el redibujado y la interacción del usuario.
     glutMainLoop();

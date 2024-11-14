@@ -87,8 +87,8 @@ int main() {
     // Definir las coordenadas de los vértices del triángulo, incluyendo las normales (para iluminación).
     float vertices[] = {
         // posiciones (x, y, z)       // normales (dirección de la luz)
-        -0.5f, -0.5f, 0.0f,           0.0f, 0.0f, 1.0f,
-         0.5f, -0.5f, 0.0f,           0.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f, 0.0f,           1.0f, 0.0f, 0.0f,
+         0.5f, -0.5f, 0.0f,           0.0f, 1.0f, 0.0f,
          0.0f,  0.5f, 0.0f,           0.0f, 0.0f, 1.0f
     };
 
