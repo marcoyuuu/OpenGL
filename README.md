@@ -94,8 +94,15 @@ Los detalles sobre cómo compilar el proyecto, incluyendo las bibliotecas necesa
 
 ## Estructura de Carpetas
 
-- **main1, main2, main3, main4, main5**: Cada carpeta contiene un ejemplo progresivo de implementaciones en OpenGL.
+- **main1, main2, main3, main4, main5, main6**: Cada carpeta contiene un ejemplo progresivo de implementaciones en OpenGL.
 - **.vscode/**: Configuraciones de entorno para Visual Studio Code, incluyendo la configuración de tareas y propiedades del compilador.
+- **LICENSE**: Archivo que contiene la licencia del proyecto.
+- **Presentación Implementacion OpenGL.pdf**: Documento PDF con la presentación sobre la implementación de OpenGL.
+- **README.md**: Este archivo de documentación.
+
+---
+
+Este formato incluye la estructura de carpetas en un formato claro y fácil de entender, con el comando `ls` que muestra la disposición actual de los archivos en el repositorio.
 
 ## Contribuir
 
