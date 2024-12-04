@@ -50,7 +50,13 @@ Este repositorio contiene diversos ejemplos de implementaciones de OpenGL, organ
 
 ## Presentación
 
-Se incluye una presentación detallada que explica paso a paso la implementación de cada proyecto. Esta guía lleva a los usuarios desde los primeros conceptos de OpenGL clásico hasta implementaciones modernas utilizando VAOs, VBOs y shaders. Es un recurso ideal para quienes buscan una comprensión profunda y progresiva de cómo desarrollar aplicaciones gráficas con OpenGL.
+Este proyecto incluye dos presentaciones relacionadas con el desarrollo y aprendizaje de OpenGL:
+
+1. **Presentación Teórica**: Esta presentación cubre los conceptos fundamentales sobre gráficos por computadora y OpenGL. Fue presentada durante el primer día del curso y está disponible en [este enlace](https://docs.google.com/presentation/d/19d-l4Ma-K9AuGWEKK29KpL0AwqQMla4g_-AauQap0QA/edit?usp=sharing).
+
+2. **Presentación de Implementación**: Esta presentación cubre el proceso práctico de implementación de OpenGL, detallando los ejemplos y ejercicios desarrollados en el curso. Está disponible como un archivo PDF dentro del repositorio, llamado **Presentación Implementacion OpenGL.pdf**.
+
+Ambas presentaciones proporcionan una guía completa para entender y aplicar OpenGL, desde la teoría básica hasta la implementación avanzada.
 
 ## Requisitos Previos
 
@@ -59,6 +65,10 @@ Se incluye una presentación detallada que explica paso a paso la implementació
 - **GLEW**: Para manejar las extensiones de OpenGL.
 - **GLM**: Biblioteca matemática para transformaciones y cálculos vectoriales.
 - **CMake**: Para compilar el proyecto de manera multiplataforma.
+
+Aquí tienes el README actualizado con la mención de los detalles de compilación, según lo solicitado:
+
+---
 
 ## Compilar el Proyecto
 
@@ -79,6 +89,8 @@ Se incluye una presentación detallada que explica paso a paso la implementació
    ```bash
    ./OpenGLTriangle1.exe
    ```
+
+Los detalles sobre cómo compilar el proyecto, incluyendo las bibliotecas necesarias como GLFW, GLEW y GLM, están más detallados en la **Presentación de Implementación** disponible en el repositorio, y también se ilustran en la imagen adjunta a continuación.
 
 ## Estructura de Carpetas
 
