@@ -1,10 +1,10 @@
-# OpenGL Implementaciones - Marco Yuuu
+# OpenGL Implementaciones
 
 ## Objetivo
 
-El objetivo de este proyecto es aprender a implementar OpenGL de forma práctica, reforzando conceptos teóricos desde el primer día. Los participantes desarrollarán ejemplos interactivos, comenzando con ejercicios simples y avanzando hacia aplicaciones más complejas. Se proporcionan códigos base, ejercicios en vivo y discusiones para consolidar conocimientos.
+Este proyecto forma parte del curso de **Gráficos por Computadoras (COMP 4046)**, de la **Universidad de Puerto Rico - Recinto de Mayagüez**. El objetivo principal es aprender y practicar la implementación de OpenGL, reforzando los conceptos teóricos desde el primer día. Los participantes desarrollarán ejemplos interactivos, comenzando con ejercicios simples y avanzando hacia aplicaciones más complejas. Se proporcionan códigos base, ejercicios en vivo y discusiones para consolidar los conocimientos.
 
-Este repositorio contiene diversos ejemplos de implementaciones de OpenGL, organizados en directorios que reflejan el avance del aprendizaje desde lo más básico hasta ejemplos más avanzados. A continuación, se describen los contenidos de cada carpeta para guiar al usuario a través del aprendizaje de gráficos 3D.
+Este repositorio contiene diversos ejemplos de implementaciones de OpenGL, organizados en directorios que reflejan el progreso en el aprendizaje de gráficos 3D. A continuación se describen los contenidos de cada carpeta para guiar al usuario a través del aprendizaje y uso de OpenGL.
 
 ## Estructura del Proyecto
 
@@ -12,53 +12,53 @@ Este repositorio contiene diversos ejemplos de implementaciones de OpenGL, organ
 
 - **Archivo Principal**: `main1.cpp`
 - **Ejecutable**: `OpenGLTriangle1.exe`
-- **Descripción**: Primer ejemplo de OpenGL donde se dibuja un triángulo simple en la pantalla. Este ejercicio está diseñado para ayudar a comprender la configuración básica de OpenGL, incluidos los conceptos de buffer de vértices y shaders.
+- **Descripción**: Primer ejemplo de OpenGL donde se dibuja un triángulo simple en la pantalla. Este ejercicio está diseñado para comprender la configuración básica de OpenGL, incluidos los conceptos de buffer de vértices y shaders.
 
 ### 2. **main2**
 
 - **Archivo Principal**: `main2.cpp`
 - **Ejecutable**: `OpenGLTriangle2.exe`
-- **Descripción**: En este ejemplo se amplía el primer triángulo con configuraciones adicionales, tales como manipulación del color de los vértices y la introducción de funciones más avanzadas de control de la ventana.
+- **Descripción**: Se amplía el primer triángulo con configuraciones adicionales, como manipulación de colores de los vértices y la introducción de funciones más avanzadas para el control de la ventana.
 
 ### 3. **main3**
 
 - **Archivo Principal**: `main3.cpp`
 - **Shaders**: `fragment_shader.glsl`, `vertex_shader.glsl`
 - **Ejecutable**: `OpenGLTriangle3.exe`
-- **Descripción**: Implementación que incluye el uso de shaders personalizados para mejorar el aspecto del triángulo. Los shaders proporcionan mayor control sobre cómo se renderizan los vértices y los fragmentos, incluyendo cálculos de color más complejos.
+- **Descripción**: Implementación que utiliza shaders personalizados para mejorar el aspecto del triángulo, brindando mayor control sobre la renderización de vértices y fragmentos, incluyendo cálculos de color más complejos.
 
 ### 4. **main4**
 
 - **Archivo Principal**: `main4.cpp`
 - **Shaders**: `fragment_shader.glsl`, `vertex_shader.glsl`
 - **Ejecutable**: `OpenGLTriangleWithLighting.exe`
-- **Descripción**: Este ejemplo introduce la iluminación básica en la escena utilizando el modelo de iluminación de Phong. Se cubren los conceptos de luz ambiental, difusa y especular para dar un mayor realismo al objeto.
+- **Descripción**: Introduce iluminación básica en la escena mediante el modelo de iluminación de Phong. Se exploran conceptos de luz ambiental, difusa y especular para dar realismo al objeto.
 
 ### 5. **main5**
 
 - **Archivo Principal**: `main5.cpp`
 - **Shaders**: `phong_fragment_shader.glsl`, `phong_vertex_shader.glsl`
 - **Ejecutable**: `OpenGLTriangleWithLighting.exe`
-- **Descripción**: Esta versión mejora la iluminación de Phong, incorporando múltiples fuentes de luz y cámara controlable para permitir la exploración de la escena. Los usuarios pueden experimentar con diferentes posiciones de luz y observar el impacto en los objetos.
+- **Descripción**: Mejora la iluminación de Phong incorporando múltiples fuentes de luz y una cámara controlable para explorar la escena. Los usuarios pueden experimentar con diferentes posiciones de luz y observar el impacto en los objetos.
 
 ### 6. **main6**
 
 - **Archivo Principal**: `main6.cpp`
 - **Shaders**: `phong_fragment_shader.glsl`, `phong_vertex_shader.glsl`
 - **Ejecutable**: `OpenGLTrianglesWithMovCamara.exe`
-- **Descripción**: Esta versión añade una escena 3D interactiva con múltiples triángulos de colores y texturas variadas. También se ha incluido un plano infinito para dar más contexto visual a la escena. La cámara se controla mediante las teclas **WASD** para el movimiento y el ratón para la rotación, ofreciendo una exploración completa de la escena. Se han optimizado los shaders para utilizar los colores de los vértices, mejorando la diversidad y el realismo visual de los triángulos. Además, se ha ajustado la iluminación para mejorar la visualización de los materiales y objetos.
+- **Descripción**: Añade una escena 3D interactiva con múltiples triángulos de colores y texturas variadas. La cámara se controla mediante las teclas **WASD** para el movimiento y el ratón para la rotación. Los shaders se han optimizado para utilizar los colores de los vértices, mejorando la diversidad visual. También se ajusta la iluminación para mejorar la visualización de los materiales.
 
 ## Presentación
 
-Se incluye una presentación detallada que explica paso a paso la implementación de cada proyecto. Esta presentación guía a los usuarios desde los primeros conceptos de OpenGL clásico hasta la implementación moderna utilizando VAOs, VBOs y shaders. Es un recurso ideal para aquellos que buscan una comprensión profunda y progresiva de cómo se desarrollan aplicaciones gráficas con OpenGL.
+Se incluye una presentación detallada que explica paso a paso la implementación de cada proyecto. Esta guía lleva a los usuarios desde los primeros conceptos de OpenGL clásico hasta implementaciones modernas utilizando VAOs, VBOs y shaders. Es un recurso ideal para quienes buscan una comprensión profunda y progresiva de cómo desarrollar aplicaciones gráficas con OpenGL.
 
 ## Requisitos Previos
 
-- **OpenGL**: Asegúrese de que su sistema soporta OpenGL 3.3 o superior.
-- **GLFW**: Utilizado para la gestión de ventanas e interacción con el usuario.
+- **OpenGL**: Asegúrate de que tu sistema soporta OpenGL 3.3 o superior.
+- **GLFW**: Para la gestión de ventanas e interacción con el usuario.
 - **GLEW**: Para manejar las extensiones de OpenGL.
 - **GLM**: Biblioteca matemática para transformaciones y cálculos vectoriales.
-- **CMake**: Para compilar el proyecto de una forma multiplataforma.
+- **CMake**: Para compilar el proyecto de manera multiplataforma.
 
 ## Compilar el Proyecto
 
@@ -67,23 +67,23 @@ Se incluye una presentación detallada que explica paso a paso la implementació
    git clone https://github.com/marcoyuuu/OpenGL.git
    cd OpenGL
    ```
-2. **Ir a carpeta deseada como:**
+2. **Ir a la carpeta deseada**:
    ```bash
    cd main1
    ```
-3. **Compilar si hay cambios como**:
+3. **Compilar si hay cambios**:
    ```bash
    g++ main1.cpp -o OpenGLTriangle1 -I"C:/msys64/mingw64/include" -L"C:/msys64/mingw64/lib" -lfreeglut -lopengl32 -lglu32
    ```
-4. **Ejecutar el Ejecutable**:
+4. **Ejecutar el ejecutable**:
    ```bash
    ./OpenGLTriangle1.exe
    ```
 
 ## Estructura de Carpetas
 
-- **main1, main2, main3, main4, main5**: Cada una de estas carpetas contiene un ejemplo progresivo de implementaciones en OpenGL.
-- **.vscode/**: Configuraciones de entorno para Visual Studio Code, incluyendo configuración de tareas y propiedades del compilador.
+- **main1, main2, main3, main4, main5**: Cada carpeta contiene un ejemplo progresivo de implementaciones en OpenGL.
+- **.vscode/**: Configuraciones de entorno para Visual Studio Code, incluyendo la configuración de tareas y propiedades del compilador.
 
 ## Contribuir
 
@@ -91,5 +91,4 @@ Si deseas contribuir a este repositorio, puedes ayudar agregando más ejemplos, 
 
 ## Licencia
 
-Este proyecto está bajo la licencia MIT - mira el archivo [LICENSE](LICENSE) para más detalles.
-
+Este proyecto está bajo la licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
